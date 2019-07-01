@@ -1,15 +1,17 @@
 //
-//  TableViewCell.swift
+//  girlTableViewCell.swift
 //  whoAreYouAraid
 //
-//  Created by Yolanda H. on 2019/6/18.
+//  Created by Yolanda H. on 2019/7/1.
 //  Copyright © 2019 Yolanda H. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class girlTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var lyricLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

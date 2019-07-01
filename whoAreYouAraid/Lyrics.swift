@@ -7,4 +7,8 @@
 //
 
 import Foundation
-
+struct Lyrics {
+    var songTime:String
+    var songRole:String
+    var songLyric:String
+}

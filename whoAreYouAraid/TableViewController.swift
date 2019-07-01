@@ -9,47 +9,70 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    var songTime = [String]()
-    var songRole = [String]()
-    var songLyric = [String]()
+    
+    var songTimes = [String]()
+    var songRoles = [String]()
+    var songLyrics = [String]()
+    var lyrics = [Lyrics]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let asset = NSDataAsset(name: "whoAreYouAfraid"), let content =
             String(data: asset.data, encoding: .utf8) {
-            let lyrics = content.components(separatedBy: "\n")
-            print(lyrics[0], lyrics[1])
-            for lyric in lyrics {
+            let array0 = content.components(separatedBy: "\n")
+            print(array0[0], array0[1])
+            print(array0.count)
+            for lyric in array0 {
                 let array = lyric.components(separatedBy: ",")
-                songTime.append(array[0])
-                songRole.append(array[1])
-                songLyric.append(array[2])
+                songTimes.append(array[0])
+                songRoles.append(array[1])
+                songLyrics.append(array[2])
             }
-            print(songLyric[0],songLyric[1])
+            print(songLyrics[0],songLyrics[1])
+            
+            for i in 0...array0.count-1 {
+                lyrics.append(Lyrics(songTime: songTimes[i], songRole: songRoles[i], songLyric: songLyrics[i]))
+            }
+            
+            print(lyrics[5].songRole)
         }
+        
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    /*override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        
         return 0
-    }
+    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        print(lyrics[9])
+        return lyrics.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        let tableLyric = lyrics[indexPath.row]
+        print(tableLyric.songRole)
+        if tableLyric.songRole == " 女" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "girlChat", for: indexPath) as! girlTableViewCell
+            cell.lyricLabel.text = tableLyric.songLyric
+            print(lyrics[10].songLyric)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "boyChat", for: indexPath) as! boyTableViewCell
+            cell.roleImage.image = UIImage(named: "role0")
+            cell.lyricLabel.text = tableLyric.songLyric
+            print(lyrics[11].songLyric)
+            return cell
+        }
+        
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

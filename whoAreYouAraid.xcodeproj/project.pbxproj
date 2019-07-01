@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0C581422C9C42B008515AC /* boyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C581322C9C42B008515AC /* boyTableViewCell.swift */; };
+		AA0C581622C9C43C008515AC /* girlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C581522C9C43C008515AC /* girlTableViewCell.swift */; };
 		AA802C4D22A7B66500507FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA802C4C22A7B66500507FEC /* AppDelegate.swift */; };
 		AA802C5222A7B66500507FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA802C5022A7B66500507FEC /* Main.storyboard */; };
 		AA802C5422A7B66C00507FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA802C5322A7B66C00507FEC /* Assets.xcassets */; };
 		AA802C5722A7B66C00507FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA802C5522A7B66C00507FEC /* LaunchScreen.storyboard */; };
 		AA802C5F22A7B77A00507FEC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA802C5E22A7B77A00507FEC /* TableViewController.swift */; };
-		AA802C6122B8C18700507FEC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA802C6022B8C18700507FEC /* TableViewCell.swift */; };
 		AA802C6722B8C97200507FEC /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA802C6622B8C97200507FEC /* Lyrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0C581322C9C42B008515AC /* boyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boyTableViewCell.swift; sourceTree = "<group>"; };
+		AA0C581522C9C43C008515AC /* girlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = girlTableViewCell.swift; sourceTree = "<group>"; };
 		AA802C4922A7B66500507FEC /* whoAreYouAraid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoAreYouAraid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA802C4C22A7B66500507FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA802C5122A7B66500507FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,7 +27,6 @@
 		AA802C5622A7B66C00507FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA802C5822A7B66C00507FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA802C5E22A7B77A00507FEC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		AA802C6022B8C18700507FEC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AA802C6622B8C97200507FEC /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				AA802C4C22A7B66500507FEC /* AppDelegate.swift */,
+				AA0C581322C9C42B008515AC /* boyTableViewCell.swift */,
+				AA0C581522C9C43C008515AC /* girlTableViewCell.swift */,
 				AA802C6622B8C97200507FEC /* Lyrics.swift */,
 				AA802C5022A7B66500507FEC /* Main.storyboard */,
-				AA802C6022B8C18700507FEC /* TableViewCell.swift */,
 				AA802C5E22A7B77A00507FEC /* TableViewController.swift */,
 				AA802C5322A7B66C00507FEC /* Assets.xcassets */,
 				AA802C5522A7B66C00507FEC /* LaunchScreen.storyboard */,
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA802C6122B8C18700507FEC /* TableViewCell.swift in Sources */,
+				AA0C581622C9C43C008515AC /* girlTableViewCell.swift in Sources */,
 				AA802C6722B8C97200507FEC /* Lyrics.swift in Sources */,
 				AA802C5F22A7B77A00507FEC /* TableViewController.swift in Sources */,
+				AA0C581422C9C42B008515AC /* boyTableViewCell.swift in Sources */,
 				AA802C4D22A7B66500507FEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
